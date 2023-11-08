@@ -1,4 +1,5 @@
 
+
 import java.util.Scanner;
 
 
@@ -18,6 +19,15 @@ public class Triangulo extends Figura{
         base = sc.nextFloat();
         System.out.println("Digita la altura del triangulo");
         altura= sc.nextFloat();
+        try{
+            if(altura > base){
+                throw new ExepcionFigura("La base debe ser mayor o igual a la altura");
+            }
+            
+        }catch(ExepcionFigura e){
+            System.out.println("Error:" + e.getMessage());
+            pideDatos();
+        }
     }
     
     @Override
