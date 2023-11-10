@@ -1,3 +1,5 @@
+package Problema3_3_2;
+
 abstract class Figura {
 
 protected String nombreFigura;
@@ -7,7 +9,8 @@ protected String nombreFigura;
     }
 
 
-    public void pideDatos(){
+    public void pideDatos()throws ExepcionFigura{
+     
     }
 
     public void imprimeDatos(){
